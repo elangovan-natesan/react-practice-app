@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import AppRoutes from "./AppRoutes";
+import { BrowserRouter, Link } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div>
+        <ul class="nav">
+          <li className="nav-item">
+            <Link className="nav-link active" aria-current="page" to="/">
+              Dashboard
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/shop">
+              Shop
+            </Link>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">
+              Inventory
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link disabled" aria-disabled="true">
+              Disabled
+            </a>
+          </li>
+        </ul>
+        <AppRoutes />
+      </div>
+      <div>
+        <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          @2023
+        </footer>
+      </div>
+    </BrowserRouter>
   );
 }
 
