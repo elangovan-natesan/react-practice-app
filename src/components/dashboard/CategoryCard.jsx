@@ -1,17 +1,9 @@
-import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import appliance from "../../assets/appliances.jpg";
 
 export default function CategoryCard({ category }) {
   const navigate = useNavigate();
 
-  useEffect(() => {
-    console.log("Category Card component is mounted");
-
-    return () => {
-      console.log("Category Card component is unmounted");
-    };
-  });
   const handleClick = (id) => {
     navigate(`/products/${id}`);
   };

@@ -5,7 +5,7 @@ import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import AppContext from "./context/AppContext";
-import { Provider } from "react-redux"; //act as an provider (or) intermediator between react app and redux-toolkit
+import { Provider } from "react-redux";
 import { store } from "./redux-toolkit/store/store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

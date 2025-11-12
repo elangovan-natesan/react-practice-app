@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
@@ -6,14 +6,6 @@ const phoneRegExp = /^[0-9]{10}$/;
 
 export default function PersonalDetails() {
   const [submitSuccess, setSubmitSuccess] = useState(false);
-
-  useEffect(() => {
-    console.log("Personal Details component mounted");
-
-    return () => {
-      console.log("Personal Details component unmounted");
-    };
-  });
 
   const initialValues = {
     name: "",
@@ -64,7 +56,6 @@ export default function PersonalDetails() {
       console.error("Submission error:", error);
     } finally {
       setSubmitting(false);
-      setIsSubmitting(false);
     }
   };
 
