@@ -23,7 +23,7 @@ function getProductsByCategoryId(categoryId) {
   return category ? category.products : null;
 }
 
-app.get("/api/shop/:id", (req, res) => {
+app.get("/api/products/:id", (req, res) => {
   const { id } = req.params;
   const products = getProductsByCategoryId(id);
 
