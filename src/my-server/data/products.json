@@ -147,6 +147,154 @@
           "images": ["https://example.com/images/microwave-oven.jpg"]
         }
       ]
+    },
+    {
+      "id": 1,
+      "name": "Electronics",
+      "description": "Latest gadgets and digital devices",
+      "products": [
+        {
+          "id": 101,
+          "name": "Smartphone X200",
+          "brand": "TechOne",
+          "price": 49999,
+          "currency": "INR",
+          "inStock": true,
+          "rating": 4.5,
+          "specs": {
+            "display": "6.5 inch AMOLED",
+            "storage": "128GB",
+            "ram": "8GB",
+            "battery": "5000mAh"
+          },
+          "tags": ["mobile", "android", "5g"],
+          "images": [
+            "https://example.com/images/smartphone-x200-front.jpg",
+            "https://example.com/images/smartphone-x200-back.jpg"
+          ]
+        },
+        {
+          "id": 102,
+          "name": "Wireless Earbuds Pro",
+          "brand": "SonicBeats",
+          "price": 8999,
+          "currency": "INR",
+          "inStock": false,
+          "rating": 4.3,
+          "specs": {
+            "battery": "24 hours playtime",
+            "connectivity": "Bluetooth 5.3",
+            "noiseCancellation": true
+          },
+          "tags": ["audio", "bluetooth", "headphones"],
+          "images": ["https://example.com/images/earbuds-pro.jpg"]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Clothing",
+      "description": "Trendy and comfortable apparel for all seasons",
+      "products": [
+        {
+          "id": 201,
+          "name": "Men’s Cotton T-Shirt",
+          "brand": "UrbanWear",
+          "price": 799,
+          "currency": "INR",
+          "inStock": true,
+          "rating": 4.1,
+          "sizes": ["S", "M", "L", "XL"],
+          "color": "Navy Blue",
+          "material": "100% Cotton",
+          "tags": ["men", "tshirt", "casual"],
+          "images": ["https://example.com/images/tshirt-men-navy.jpg"]
+        },
+        {
+          "id": 202,
+          "name": "Women’s Denim Jacket",
+          "brand": "StyleHive",
+          "price": 2499,
+          "currency": "INR",
+          "inStock": true,
+          "rating": 4.6,
+          "sizes": ["S", "M", "L"],
+          "color": "Light Blue",
+          "material": "Denim",
+          "tags": ["women", "jacket", "denim"],
+          "images": ["https://example.com/images/jacket-women-denim.jpg"]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Groceries",
+      "description": "Daily essentials and fresh food items",
+      "products": [
+        {
+          "id": 301,
+          "name": "Organic Basmati Rice (5kg)",
+          "brand": "Nature’s Harvest",
+          "price": 649,
+          "currency": "INR",
+          "inStock": true,
+          "rating": 4.7,
+          "tags": ["rice", "organic", "grains"],
+          "expiry": "2026-03-01",
+          "images": ["https://example.com/images/basmati-rice.jpg"]
+        },
+        {
+          "id": 302,
+          "name": "Pure Cow Ghee (1L)",
+          "brand": "Arogya Farms",
+          "price": 899,
+          "currency": "INR",
+          "inStock": true,
+          "rating": 4.8,
+          "tags": ["dairy", "ghee", "organic"],
+          "expiry": "2025-12-30",
+          "images": ["https://example.com/images/pure-ghee.jpg"]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Home Appliances",
+      "description": "Essential appliances for modern homes",
+      "products": [
+        {
+          "id": 401,
+          "name": "Front Load Washing Machine",
+          "brand": "Whirlpool",
+          "price": 35999,
+          "currency": "INR",
+          "inStock": true,
+          "rating": 4.4,
+          "specs": {
+            "capacity": "7kg",
+            "type": "Front Load",
+            "energyRating": "5 Star"
+          },
+          "tags": ["washing machine", "laundry", "home appliance"],
+          "images": ["https://example.com/images/washing-machine.jpg"]
+        },
+        {
+          "id": 402,
+          "name": "Microwave Oven 25L",
+          "brand": "LG",
+          "price": 15999,
+          "currency": "INR",
+          "inStock": true,
+          "rating": 4.2,
+          "specs": {
+            "capacity": "25L",
+            "power": "900W",
+            "type": "Convection"
+          },
+          "tags": ["kitchen", "microwave", "cooking"],
+          "images": ["https://example.com/images/microwave-oven.jpg"]
+        }
+      ]
     }
   ]
 }

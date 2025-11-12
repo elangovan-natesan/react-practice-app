@@ -1,4 +1,3 @@
-// src/api/productApi.js
 import api from "./axiosInstance";
 
 export const getProducts = () => api.get("/products");
