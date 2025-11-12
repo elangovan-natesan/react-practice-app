@@ -1,0 +1,43 @@
+.prod-img {
+  height: 100px;
+  background-color: red;
+  display: block;
+  margin: 2px;
+  border-radius: 5px;
+}
+
+.card-width {
+  width: 200px;
+}
+
+.prods-img {
+  height: 220px;
+}
+
+.prod-specs {
+  text-align: center;
+  display: block;
+}
+
+.specs-key {
+  font-size: small;
+  font-weight: bold;
+}
+
+.specs-value {
+  font-size: small;
+}
+
+.specs-title {
+  font-size: large;
+  font-weight: bold;
+}
+
+.specs-block {
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.badge {
+  font-size: x-small !important;
+}

@@ -1,15 +1,20 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import AppContext from "./context/AppContext";
+import { Provider } from "react-redux"; //act as an provider (or) intermediator between react app and redux-toolkit
+import { store } from "./redux-toolkit/store/store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <AppContext>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </AppContext>
 );
 
 // If you want to start measuring performance in your app, pass a function
