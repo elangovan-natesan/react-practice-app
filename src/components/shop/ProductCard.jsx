@@ -6,11 +6,11 @@ import { useDispatch } from "react-redux";
 import { addItem } from "../../redux-toolkit/store/cartSlice";
 
 export default function ProductCard({ product }) {
-  const { addToCart } = useAppContext();
+  // const { addToCart } = useAppContext();
   const dispatch = useDispatch();
 
   const handleAddToCart = () => {
-    addToCart(product);
+    // addToCart(product);
     dispatch(addItem(product));
   };
 

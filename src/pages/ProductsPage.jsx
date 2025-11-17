@@ -3,10 +3,14 @@ import ProductList from "../components/shop/ProductList";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { useAppContext } from "../context/AppContext";
+import { useSelector } from "react-redux";
 
 export default function ProductsPage() {
   const [productsByCategory, setProductsByCategory] = useState(null);
-  const { products } = useAppContext();
+  // const { products } = useAppContext();
+  const products = useSelector((reducer) => {
+    return reducer.allProducts;
+  });
 
   const { id } = useParams();
 
@@ -17,7 +21,6 @@ export default function ProductsPage() {
       const productsByCategory = products.categories.find(
         (category) => category.id == id
       );
-      console.log("using find :", productsByCategory.products);
       setProductsByCategory(productsByCategory.products);
     }
 

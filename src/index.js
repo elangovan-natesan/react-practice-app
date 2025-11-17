@@ -9,12 +9,14 @@ import { Provider } from "react-redux";
 import { store } from "./redux-toolkit/store/store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+console.log("state in redux store :", store.getState());
+
 root.render(
-  <AppContext>
-    <Provider store={store}>
-      <App />
-    </Provider>
-  </AppContext>
+  // <AppContext>
+  <Provider store={store}>
+    <App />
+  </Provider>
+  // </AppContext>
 );
 
 // If you want to start measuring performance in your app, pass a function

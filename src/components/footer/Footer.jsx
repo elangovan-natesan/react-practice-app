@@ -3,7 +3,7 @@ export default function Footer() {
     <div
       style={{
         width: "100%",
-        backgroundColor: "yellow",
+        backgroundColor: "blue",
         border: "2px solid white",
       }}
     >
