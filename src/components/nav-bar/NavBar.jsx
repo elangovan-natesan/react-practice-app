@@ -5,14 +5,10 @@ export default function NavBar() {
   const carts = useSelector((reducer) => {
     // return reducer.carts;
     let cartItems = 0;
-    console.log(reducer.carts);
 
     for (const cart of reducer.carts) {
-      console.log("cart quantity :", cart.quantity);
-
       cartItems += cart.quantity;
     }
-    console.log("cart length :", cartItems);
 
     return cartItems;
   });
