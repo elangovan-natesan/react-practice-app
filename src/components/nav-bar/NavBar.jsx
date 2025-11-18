@@ -3,7 +3,14 @@ import { useSelector } from "react-redux";
 
 export default function NavBar() {
   const carts = useSelector((reducer) => {
-    return reducer.carts;
+    // return reducer.carts;
+    let cartItems = 0;
+
+    for (const cart of reducer.carts) {
+      cartItems += cart.quantity;
+    }
+
+    return cartItems;
   });
 
   return (
@@ -28,7 +35,8 @@ export default function NavBar() {
           <Link className="nav-link" to="/cart">
             <i className="bi bi-bag-check "></i>
             <span className="top-0 start-100 translate-middle badge p-1 rounded-pill bg-danger badge">
-              {carts ? carts.length : 0}
+              {/* {carts ? carts.length : 0} */}
+              {carts > 0 ? carts : 0}
             </span>
           </Link>
         </li>

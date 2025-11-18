@@ -20,6 +20,10 @@ export default function CartTable({ cartItems }) {
       header: "Price",
       render: (item) => `${item.price} ${item.currency}`,
     },
+    {
+      key: "quantity",
+      header: "Quantity",
+    },
   ];
 
   return (

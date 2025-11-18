@@ -12,8 +12,8 @@ export default function TableComponent({ items, columns }) {
     navigate("/personalDetails");
   };
 
-  const handleRemoveItem = (item) => {
-    dispatch(removeItem(item.id));
+  const handleRemoveItem = (item, index) => {
+    dispatch(removeItem(index));
   };
 
   return (
@@ -54,7 +54,7 @@ export default function TableComponent({ items, columns }) {
               <button
                 className="btn btn-primary"
                 type="button"
-                onClick={() => handleRemoveItem(item)}
+                onClick={() => handleRemoveItem(item, index)}
               >
                 Remove from Cart
               </button>
